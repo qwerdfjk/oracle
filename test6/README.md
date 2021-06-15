@@ -473,7 +473,7 @@ end;
 ![](./14.jpg)
 ![](./15.jpg)
 ![](./16.jpg)
-### 6.创建程序包、存储过程、函数执行分析计划
+### 5.创建程序包、存储过程、函数执行分析计划
 
 **创建程序包**
 
@@ -573,7 +573,7 @@ WHERE a.tablespace_name = b.tablespace_name
 ![](./23.jpg)
 ![](./24.jpg)
 
-### 7.备份恢复
+### 6.备份恢复
 
 - 备份./rman_level0.sh
 
@@ -597,7 +597,7 @@ WHERE a.tablespace_name = b.tablespace_name
 
 ![](./30.png)
 
-### 8.容灾
+### 7.容灾
 - 主库查询确认组数
 ![](./31.png)
 - 主库增加standbylogfile：
