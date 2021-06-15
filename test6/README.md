@@ -587,7 +587,7 @@ WHERE a.tablespace_name = b.tablespace_name
 
 - 删除数据
 
-![](./28.png)
+![](./28.jpg)
 
 - 恢复备份
 
@@ -598,28 +598,53 @@ WHERE a.tablespace_name = b.tablespace_name
 ![](./30.png)
 
 ### 7.容灾
+
 - 主库查询确认组数
+  
 ![](./31.png)
+
 - 主库增加standbylogfile：
+
 ![](./32.jpg)
+
 - 主库环境开启强制归档并修改参数
+
 ![](./33.jpg)
-![](./34.jpg)
+
+![](./34.png)
+
 - 在备库oracle用户创建归档目录，数据目录并设置权限
-![](./35.png)
+
+![](./35.jpg)
+
 - 备库下执行
+  
 ![](./36.jpg)
+
 - 修改主库及备库下文件/home/oracle/app/oracle/product/12.1.0/dbhome_1/network/admin/tnsnames.ora加入配置：
+
 ![](./37.jpg)
+
 - 在主库上生成备库的参数文件
+
 ![](./43.png)
+
 - 将主库的参数文件，密码文件拷贝到备库
-![](./38.jpg)
+
+![](./38.png)
+
 - 将主库复制到备库
-![](./39.png)
+
+![](./39.jpg)
+
 - 在备库上更改参数文件
-![](./40.jpg)
+
+![](./40.png)
+
 - 在备库增加静态监听
+
 ![](./41.png)
+
 - 重启备库
+
 ![](./42.jpg)
